@@ -49,6 +49,7 @@
     Gallery: "गॅलरी",
     "Contact Us": "आमच्याशी संपर्क",
     "Privacy Policy": "गोपनीयता धोरण",
+    "Terms of Service": "सेवा अटी",
     "Follow Us": "आम्हाला फॉलो करा",
     "Stay connected with our latest updates and events.":
       "आमच्या ताज्या अपडेट्स आणि कार्यक्रमांसोबत जोडलेले रहा.",
@@ -381,6 +382,7 @@
     const isNews = path.endsWith("/news.html") || path.endsWith("\\news.html");
     const isGallery = path.endsWith("/gallery.html") || path.endsWith("\\gallery.html");
     const isPrivacy = path.endsWith("/privacy.html") || path.endsWith("\\privacy.html");
+    const isTerms = path.endsWith("/terms.html") || path.endsWith("\\terms.html");
     if (lang === "mr") {
       if (isAbout) {
         document.title = "आमच्याबद्दल • कै.श्री. माणिकराव पाटील एज्युकेशनल फौंडेशन (MPEF)";
@@ -390,6 +392,8 @@
         document.title = "गॅलरी • कै.श्री. माणिकराव पाटील एज्युकेशनल फौंडेशन (MPEF)";
       } else if (isPrivacy) {
         document.title = "गोपनीयता धोरण • कै.श्री. माणिकराव पाटील एज्युकेशनल फौंडेशन (MPEF)";
+      } else if (isTerms) {
+        document.title = "सेवा अटी • कै.श्री. माणिकराव पाटील एज्युकेशनल फौंडेशन (MPEF)";
       } else {
         document.title = "कै.श्री. माणिकराव पाटील एज्युकेशनल फौंडेशन (MPEF)";
       }
@@ -403,6 +407,8 @@
       document.title = "Gallery • Manikrao Patil Education Foundation (MPEF)";
     } else if (isPrivacy) {
       document.title = "Privacy Policy • Manikrao Patil Education Foundation (MPEF)";
+    } else if (isTerms) {
+      document.title = "Terms of Service • Manikrao Patil Education Foundation (MPEF)";
     } else {
       document.title = "Manikrao Patil Education Foundation (MPEF)";
     }
